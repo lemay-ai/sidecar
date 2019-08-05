@@ -1,3 +1,8 @@
+''' 
+    Author: Lemay.ai
+    License: GPLv3
+'''
+
 # This is a dirty hack based on the CWS generation script that I didn't want to write and I'm
 # sorry.
 
