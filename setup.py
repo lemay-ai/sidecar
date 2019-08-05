@@ -14,6 +14,6 @@ setup(
 
     include_package_data=True,
 
-    install_requires=["pandas>=0.24.2","Keras>=2.2.4","sklearn","numpy>=1.16.2","fasttext>=0.9.1","gensim>=3.8.0"],
+    install_requires=["pandas>=0.24.*","Keras>=2.2.4","sklearn","numpy>=1.16.*","fasttext>=0.9.*","gensim>=3.8.0"],
 
 )
