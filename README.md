@@ -1,7 +1,7 @@
 # sidecar
 Sidecar: Augmenting Word Embedding Models With Expert Knowledge
 
-# DATA
+# Testing Data
 The data for the paper was pulled from https://cloud.google.com/bigquery/public-data/stackoverflow
 
 Example queries: 
