@@ -1,5 +1,8 @@
-# sidecar
-Sidecar: Augmenting Word Embedding Models With Expert Knowledge
+# Sidecar: Augmenting Word Embedding Models With Expert Knowledge
+
+
+
+This repository was released by Lemay.ai as open source software under the license specified in this repository (GPLv3), and represents the work product described in the research paper "Sidecar: Augmenting Word Embedding Models With Expert Knowledge"
 
 # Installation
 
