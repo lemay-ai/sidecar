@@ -1,6 +1,6 @@
-'''
+''' 
     Author: Lemay.ai
-	License: GPLv3
+    License: GPLv3
 '''
 from lemay_ai_sidecar import lemay_ai_sidecar
 import os
