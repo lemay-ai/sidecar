@@ -7,7 +7,7 @@ import wget
 fname_pretrained="crawl-300d-2M.vec"
 
 if not os.path.exists(fname_pretrained):
-    wget.download("wget https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip")
+    wget.download("https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip")
     with zipfile.ZipFile("crawl-300d-2M.vec.zip","r") as zip_ref:
         zip_ref.extractall(".")
 
