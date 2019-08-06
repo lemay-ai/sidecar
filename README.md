@@ -1,6 +1,6 @@
 # Sidecar: Augmenting Word Embedding Models With Expert Knowledge
 
-The sidecar project provides a mechanism for customizing a pre-trained word embedding model, for application in a domain with plenty of jargon (e.g., index means one thing in a book and another thing in a SQL database) and out-of-vacabulary words (e.g., BigInteger is not in the dictionary but encodes meaning in the context of the Java programming language).
+The sidecar project provides a mechanism for customizing a pre-trained word embedding model, for application in a domain with plenty of jargon (e.g., *index* means one thing in a book, and another thing in a SQL database) and out-of-vacabulary words (e.g., *BigInteger* is not in the dictionary but encodes meaning in the context of the Java programming language).
 
 This library takes in a dataset and a pre-trained model, and it returns back 
 
