@@ -2,9 +2,11 @@
 
 The sidecar project provides a mechanism for customizing a pre-trained word embedding model, for application in a domain with plenty of jargon (e.g., *index* means one thing in a book, and another thing in a SQL database) and out-of-vacabulary words (e.g., *BigInteger* is not in the dictionary but encodes meaning in the context of the Java programming language).
 
-This library takes in a dataset and a pre-trained model, and it returns back 
+This library takes in a dataset and a pre-trained model, and it returns back an LSTM neural network model for classifying text using the new custom model ("model"), the filename where the neural network model is saved on disk ("fname_sidecar"), and the filename where a new custom fasttext model is located on disk ("fname_custom"). The LSTM model makes a prediction on the concatenation of the a pre-trained model vector with the custom vector for the same text.
 
-The dataset input format is a pandas dataframe where the column with text samples is named "body" and the column with the taget labels is named "tags".
+The **CSV dataset** input format is processed as a pandas dataframe, where the column with text samples is named **"body"** and the column with the taget labels is named **"tags"**.
+
+The following is one key finding from this work:
 
 ![Results High Level Summary](https://github.com/lemay-ai/sidecar/blob/master/images/accuracy.png)
 
