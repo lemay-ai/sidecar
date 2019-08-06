@@ -18,8 +18,11 @@ First off, the current version of fasttext is not playing nicely with pip, and s
 ```
 pip3 install fasttext
 ```
-Now, the following commands should get you the rest of the software:
-
+The repository is available for download as a pip package using the following command:
+```
+pip install lemay-ai-sidecar
+```
+If you prefer you can directly clone the repository using the following instructions:
 ```
 git clone https://github.com/lemay-ai/sidecar.git
 cd sidecar/
