@@ -1,5 +1,11 @@
 # Sidecar: Augmenting Word Embedding Models With Expert Knowledge
 
+The sidecar project provides a mechanism for customizing a pre-trained word embedding model, for application in a domain with plenty of jargon (e.g., index means one thing in a book and another thing in a SQL database) and out-of-vacabulary words (e.g., BigInteger is not in the dictionary but encodes meaning in the context of the Java programming language).
+
+This library takes in a dataset and a pre-trained model, and it returns back 
+
+The dataset input format is a pandas dataframe where the column with text samples is named "body" and the column with the taget labels is named "tags".
+
 ![Results High Level Summary](https://github.com/lemay-ai/sidecar/blob/master/images/accuracy.png)
 
 This repository was released by Lemay.ai as open source software under the license specified in this repository (GPLv3), and represents the work product described in the research paper "Sidecar: Augmenting Word Embedding Models With Expert Knowledge"
