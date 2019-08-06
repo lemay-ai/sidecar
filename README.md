@@ -10,7 +10,7 @@ First off, the current version of fasttext is not playing nicely with pip, and s
 ```
 pip3 install fasttext
 ```
-Now, the following commands sholud get you the rest of the software:
+Now, the following commands should get you the rest of the software:
 
 ```
 git clone https://github.com/lemay-ai/sidecar.git
