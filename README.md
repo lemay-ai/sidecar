@@ -4,7 +4,7 @@ The sidecar project provides a mechanism for customizing a pre-trained word embe
 
 This library takes in a dataset and a pre-trained model, and it returns back an LSTM neural network model for classifying text using the new custom model ("model"), the filename where the neural network model is saved on disk ("fname_sidecar"), and the filename where a new custom fasttext model is located on disk ("fname_custom"). The LSTM model makes a prediction on the concatenation of the a pre-trained model vector with the custom vector for the same text.
 
-The **CSV dataset** input format is processed as a pandas dataframe, where the column with text samples is named **"body"** and the column with the taget labels is named **"tags"**.
+The **CSV dataset** input is processed as a pandas dataframe, where the column with text samples is named **"body"** and the column with the taget labels is named **"tags"**. To use this project for your own purposes, change the dataset passed to the framework, and feel free to try other pre-trained models as well.
 
 The following is one key finding from this work:
 
@@ -28,11 +28,15 @@ python3 setup.py install
 
 # Testing
 
+## WARNING: THIS TEST TAKES A LONG TIME TO RUN, AND GOBBLES RAM, SO ALLOCATE 16GB+ FOR THIS TEST
+
 Test the library using the test data supplied in the repository as follows. It takes about 10 to 25 minutes to run the test:
 
 ```
 python3 test.py
 ```
+
+## NOTE: THIS TEST SHOULD WORK ON CPU, GPU, AND EVEN TPU... WE HAVE TESTED IT
 
 # Testing Data Origin
 The data for the paper was pulled from https://cloud.google.com/bigquery/public-data/stackoverflow
