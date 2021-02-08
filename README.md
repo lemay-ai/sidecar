@@ -1,5 +1,7 @@
 # Sidecar: Augmenting Word Embedding Models With Expert Knowledge
 
+RESEARCH PAPER: https://link.springer.com/chapter/10.1007/978-3-030-39442-4_39
+
 The sidecar project provides a mechanism for customizing a pre-trained word embedding model, for application in a domain with plenty of jargon (e.g., *index* means one thing in a book, and another thing in a SQL database) and out-of-vacabulary words (e.g., *BigInteger* is not in the dictionary but encodes meaning in the context of the Java programming language).
 
 This library takes in a dataset and a pre-trained model, and it returns back an LSTM neural network model for classifying text using the new custom model ("model"), the filename where the neural network model is saved on disk ("fname_sidecar"), and the filename where a new custom fasttext model is located on disk ("fname_custom"). The LSTM model makes a prediction on the concatenation of the a pre-trained model vector with the custom vector for the same text.
